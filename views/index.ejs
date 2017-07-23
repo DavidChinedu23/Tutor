@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 style = "text-align: center"><%= title %></h1>
+    <form style = "text-align: center" action="/users" method="post">
+		Username:<input type="text" name = "user" value="" style = "margin-left: 20px"/>
+		<br><br>
+		Password:<input type="password" name="pw" value="" style = "margin-left: 23px"/>
+		<br><br>
+		<a href = "/register" style = "margin-right: 50px">Register</a><input type="submit" value="Login"/>
+	</form>
+  </body>
+</html>

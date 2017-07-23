@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title><%= title%></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<h1 style = "text-align: center"><%= title%></h1>
+	<form style = "text-align: center" action="/register/registration" method="post">
+		Username:
+		<input type="text" name="user" value="" style = "margin-left: 20px"/>
+		<br><br>
+		Password:
+		<input type="text" name="pw" value="" style = "margin-left: 23px"/>
+		<br><br>
+		<input type="submit" value="Register"/>
+	</form>
+	<p style = "margin-left: 450px"> Status: <%= inform %></p>
+</body>
+</html>
